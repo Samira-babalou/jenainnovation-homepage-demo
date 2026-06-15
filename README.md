@@ -1,2 +1,2 @@
 # jenainnovation-homepage-demo
-Homepgae demo
+Homepage demo
