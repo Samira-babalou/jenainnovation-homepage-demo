@@ -3,415 +3,179 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>JENAINNOVATION</title>
+<title>JENAINNOVATION Demo</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 <style>
-html {
-    scroll-behavior: smooth;
-}
-
-.hero-slide {
-    display: none;
-}
-
-.hero-slide.active {
-    display: block;
+body { font-family: Inter, Arial, sans-serif; }
+.hero-img{
+  background-size:cover;
+  background-position:center;
+  height:550px;
 }
 </style>
 </head>
-
 <body class="bg-white text-gray-800">
 
-<!-- NAVBAR -->
-
-<header class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur border-b z-50">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
-        <div class="font-bold text-2xl text-blue-900">
-            JENAINNOVATION
-        </div>
-
-        <nav class="hidden md:flex gap-8 text-sm font-medium">
-            <a href="#support" class="hover:text-blue-700">Support</a>
-            <a href="#events" class="hover:text-blue-700">Events</a>
-            <a href="#team" class="hover:text-blue-700">Team</a>
-            <a href="#newsletter" class="hover:text-blue-700">Newsletter</a>
-        </nav>
-
-    </div>
+<header class="fixed top-0 left-0 right-0 bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold text-blue-900">JENAINNOVATION</div>
+    <nav class="hidden md:flex gap-8">
+      <a href="#support">Support</a>
+      <a href="#events">Events</a>
+      <a href="#team">Team</a>
+    </nav>
+  </div>
 </header>
 
-<!-- HERO -->
+<section class="pt-16">
+<div class="swiper heroSwiper">
 
-<section class="pt-28">
+<div class="swiper-wrapper">
 
-    <div class="bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+<div class="swiper-slide">
+<div class="hero-img flex items-center" style="background-image:url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1600&auto=format&fit=crop');">
+<div class="bg-black/50 w-full h-full flex items-center">
+<div class="max-w-7xl mx-auto px-6 text-white">
+<h1 class="text-5xl font-bold mb-6">Turning Ideas into Impact</h1>
+<p class="text-xl mb-8 max-w-2xl">Supporting innovation from first idea to real-world application.</p>
+<a href="#support" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold">Get Started</a>
+</div>
+</div>
+</div>
+</div>
 
-        <div class="max-w-7xl mx-auto px-6 py-24">
+<div class="swiper-slide">
+<div class="hero-img flex items-center" style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop');">
+<div class="bg-black/50 w-full h-full flex items-center">
+<div class="max-w-7xl mx-auto px-6 text-white">
+<h1 class="text-5xl font-bold mb-6">Funding Early-Stage Innovation</h1>
+<p class="text-xl mb-8 max-w-2xl">Explore funding opportunities, mentoring and expert support.</p>
+<a href="#support" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold">Explore Support</a>
+</div>
+</div>
+</div>
+</div>
 
-            <div id="slide1" class="hero-slide active">
-                <h1 class="text-5xl font-bold mb-6">
-                    Turning Ideas into Impact
-                </h1>
+<div class="swiper-slide">
+<div class="hero-img flex items-center" style="background-image:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop');">
+<div class="bg-black/50 w-full h-full flex items-center">
+<div class="max-w-7xl mx-auto px-6 text-white">
+<h1 class="text-5xl font-bold mb-6">Connecting Research, Industry & Society</h1>
+<p class="text-xl mb-8 max-w-2xl">Building partnerships for the innovations of tomorrow.</p>
+<a href="#" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold">Partner With Us</a>
+</div>
+</div>
+</div>
+</div>
 
-                <p class="text-xl max-w-3xl mb-8">
-                    Supporting innovation from first idea to real-world application.
-                </p>
+</div>
 
-                <button class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold">
-                    Get Started
-                </button>
-            </div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-pagination"></div>
 
-            <div id="slide2" class="hero-slide">
-                <h1 class="text-5xl font-bold mb-6">
-                    Funding Early-Stage Innovation
-                </h1>
-
-                <p class="text-xl max-w-3xl mb-8">
-                    Explore funding opportunities, mentoring, and expert support.
-                </p>
-
-                <button class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold">
-                    Explore Support
-                </button>
-            </div>
-
-            <div id="slide3" class="hero-slide">
-                <h1 class="text-5xl font-bold mb-6">
-                    Connecting Research, Industry, and Society
-                </h1>
-
-                <p class="text-xl max-w-3xl mb-8">
-                    Building partnerships for the innovations of tomorrow.
-                </p>
-
-                <button class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold">
-                    Partner With Us
-                </button>
-            </div>
-
-        </div>
-    </div>
+</div>
 </section>
-
-<!-- WHO ARE YOU -->
 
 <section class="py-24">
-
 <div class="max-w-7xl mx-auto px-6">
+<h2 class="text-4xl font-bold text-center mb-4">Who Are You?</h2>
+<p class="text-center text-gray-600 mb-12">Choose the path that best describes you.</p>
 
-<h2 class="text-4xl font-bold text-center mb-4">
-Who Are You?
-</h2>
-
-<p class="text-center text-gray-600 mb-16">
-Choose the path that best describes you.
-</p>
-
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-<div class="border rounded-xl p-8 shadow-sm">
-<h3 class="text-2xl font-bold mb-4">🎓 Student</h3>
-<p class="mb-6">
-Develop innovation skills, connect with experts and explore funding opportunities.
-</p>
-<button class="text-blue-700 font-semibold">
-Discover Opportunities →
-</button>
-</div>
-
-<div class="border rounded-xl p-8 shadow-sm">
-<h3 class="text-2xl font-bold mb-4">🔬 Researcher</h3>
-<p class="mb-6">
-Transfer research into practice and build pathways toward impact.
-</p>
-<button class="text-blue-700 font-semibold">
-Research Transfer →
-</button>
-</div>
-
-<div class="border rounded-xl p-8 shadow-sm">
-<h3 class="text-2xl font-bold mb-4">🚀 Founder</h3>
-<p class="mb-6">
-Access mentoring, funding guidance and startup support.
-</p>
-<button class="text-blue-700 font-semibold">
-Grow Your Venture →
-</button>
-</div>
-
-<div class="border rounded-xl p-8 shadow-sm">
-<h3 class="text-2xl font-bold mb-4">🏢 Company</h3>
-<p class="mb-6">
-Connect with experts, technologies and innovation partners.
-</p>
-<button class="text-blue-700 font-semibold">
-Collaborate →
-</button>
-</div>
-
+<div class="grid md:grid-cols-4 gap-6">
+<div class="border rounded-xl p-6"><h3 class="text-xl font-bold mb-3">🎓 Student</h3><p>Explore ideas and funding opportunities.</p></div>
+<div class="border rounded-xl p-6"><h3 class="text-xl font-bold mb-3">🔬 Researcher</h3><p>Transfer research into practice.</p></div>
+<div class="border rounded-xl p-6"><h3 class="text-xl font-bold mb-3">🚀 Founder</h3><p>Build and grow your venture.</p></div>
+<div class="border rounded-xl p-6"><h3 class="text-xl font-bold mb-3">🏢 Company</h3><p>Find partners and innovations.</p></div>
 </div>
 </div>
 </section>
 
-<!-- CONSULTATION -->
-
-<section class="bg-gray-50 py-24">
-
-<div class="max-w-5xl mx-auto px-6 text-center">
-
-<h2 class="text-4xl font-bold mb-6">
-Book an Innovation Consultation
-</h2>
-
-<p class="text-xl text-gray-600 mb-8">
-Discuss your idea, challenge, project or opportunity with one of our Innovation Scouts.
-</p>
-
-<button class="bg-blue-800 text-white px-8 py-4 rounded-lg font-semibold">
-Book Consultation
-</button>
-
-</div>
-</section>
-
-<!-- SUPPORT PROGRAMS -->
-
-<section id="support" class="py-24">
-
+<section id="support" class="py-24 bg-gray-50">
 <div class="max-w-7xl mx-auto px-6">
-
-<h2 class="text-4xl font-bold text-center mb-16">
-Innovation Support Programs
-</h2>
+<h2 class="text-4xl font-bold text-center mb-4">Apply for Support</h2>
+<p class="text-center text-gray-600 mb-12">Funding and guidance for every stage of innovation.</p>
 
 <div class="grid md:grid-cols-3 gap-8">
 
-<div class="border rounded-xl p-8">
-<h3 class="text-2xl font-bold mb-4">
-Exploration Ticket
-</h3>
-<p>
-For testing and exploring early-stage innovative ideas.
-</p>
-</div>
+<a href="#" target="_blank" class="bg-white rounded-xl shadow p-8 hover:shadow-lg">
+<h3 class="text-2xl font-bold mb-4">Exploration Ticket</h3>
+<p class="mb-6">Test and explore early-stage innovative ideas.</p>
+<span class="bg-blue-800 text-white px-4 py-2 rounded">Apply Now</span>
+</a>
 
-<div class="border rounded-xl p-8">
-<h3 class="text-2xl font-bold mb-4">
-Validation Ticket
-</h3>
-<p>
-For validating technologies, concepts and prototypes.
-</p>
-</div>
+<a href="#" target="_blank" class="bg-white rounded-xl shadow p-8 hover:shadow-lg">
+<h3 class="text-2xl font-bold mb-4">Prototype Ticket</h3>
+<p class="mb-6">Develop concepts and validate prototypes.</p>
+<span class="bg-blue-800 text-white px-4 py-2 rounded">Apply Now</span>
+</a>
 
-<div class="border rounded-xl p-8">
-<h3 class="text-2xl font-bold mb-4">
-Transfer Ticket
-</h3>
-<p>
-For advancing innovations toward implementation and impact.
-</p>
-</div>
+<a href="#" target="_blank" class="bg-white rounded-xl shadow p-8 hover:shadow-lg">
+<h3 class="text-2xl font-bold mb-4">Startup Ticket</h3>
+<p class="mb-6">Support science-based startup creation.</p>
+<span class="bg-blue-800 text-white px-4 py-2 rounded">Apply Now</span>
+</a>
 
 </div>
+</div>
+</section>
 
-<div class="text-center mt-12">
-<button class="bg-blue-800 text-white px-8 py-4 rounded-lg">
-Apply for Support
-</button>
+<section id="events" class="py-24">
+<div class="max-w-5xl mx-auto px-6">
+<h2 class="text-4xl font-bold text-center mb-12">Upcoming Events</h2>
+
+<div class="space-y-6">
+<div class="border rounded-xl p-6">
+<div class="font-semibold text-blue-700">15 Sept 2026</div>
+<h3 class="text-2xl font-bold">Innovation Workshop</h3>
+<p>Learn practical methods for idea validation.</p>
+</div>
+
+<div class="border rounded-xl p-6">
+<div class="font-semibold text-blue-700">28 Sept 2026</div>
+<h3 class="text-2xl font-bold">Startup Networking Event</h3>
+<p>Meet founders, researchers and investors.</p>
+</div>
+
+<div class="border rounded-xl p-6">
+<div class="font-semibold text-blue-700">12 Oct 2026</div>
+<h3 class="text-2xl font-bold">Research Transfer Day</h3>
+<p>Discover pathways from science to impact.</p>
+</div>
 </div>
 
 </div>
 </section>
 
-<!-- EVENTS -->
-
-<section id="events" class="bg-gray-50 py-24">
-
+<section id="team" class="py-24 bg-gray-50">
 <div class="max-w-7xl mx-auto px-6">
+<h2 class="text-4xl font-bold text-center mb-12">Meet Our Team</h2>
 
-<h2 class="text-4xl font-bold text-center mb-16">
-Upcoming Events
-</h2>
-
-<div class="grid md:grid-cols-3 gap-8">
-
-<div class="bg-white p-6 rounded-xl shadow">
-<h3 class="font-bold text-xl mb-2">
-Innovation Workshop
-</h3>
-<p>
-Learn methods for idea validation and innovation development.
-</p>
+<div class="grid md:grid-cols-4 gap-6 text-center">
+<div class="bg-white p-6 rounded-xl shadow"><h3 class="font-bold">Innovation Scout</h3><p>Entrepreneurship</p></div>
+<div class="bg-white p-6 rounded-xl shadow"><h3 class="font-bold">Innovation Scout</h3><p>Digital Technologies & AI</p></div>
+<div class="bg-white p-6 rounded-xl shadow"><h3 class="font-bold">Innovation Scout</h3><p>Photonics</p></div>
+<div class="bg-white p-6 rounded-xl shadow"><h3 class="font-bold">Innovation Scout</h3><p>Advanced Materials</p></div>
 </div>
-
-<div class="bg-white p-6 rounded-xl shadow">
-<h3 class="font-bold text-xl mb-2">
-Startup Networking
-</h3>
-<p>
-Meet founders, investors and innovation experts.
-</p>
-</div>
-
-<div class="bg-white p-6 rounded-xl shadow">
-<h3 class="font-bold text-xl mb-2">
-Research Transfer Day
-</h3>
-<p>
-Explore pathways from science to societal impact.
-</p>
-</div>
-
-</div>
-
 </div>
 </section>
 
-<!-- TEAM -->
-
-<section id="team" class="py-24">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<h2 class="text-4xl font-bold text-center mb-16">
-Meet Our Team
-</h2>
-
-<div class="grid md:grid-cols-4 gap-8">
-
-<div class="text-center">
-<div class="h-32 w-32 rounded-full bg-gray-200 mx-auto mb-4"></div>
-<h3 class="font-bold">Innovation Scout</h3>
-<p>Entrepreneurship & Startups</p>
-</div>
-
-<div class="text-center">
-<div class="h-32 w-32 rounded-full bg-gray-200 mx-auto mb-4"></div>
-<h3 class="font-bold">Innovation Scout</h3>
-<p>Digital Technologies & AI</p>
-</div>
-
-<div class="text-center">
-<div class="h-32 w-32 rounded-full bg-gray-200 mx-auto mb-4"></div>
-<h3 class="font-bold">Innovation Scout</h3>
-<p>Photonics & Diagnostics</p>
-</div>
-
-<div class="text-center">
-<div class="h-32 w-32 rounded-full bg-gray-200 mx-auto mb-4"></div>
-<h3 class="font-bold">Innovation Scout</h3>
-<p>Advanced Materials</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<!-- NEWSLETTER -->
-
-<section id="newsletter" class="bg-blue-900 text-white py-24">
-
-<div class="max-w-3xl mx-auto text-center px-6">
-
-<h2 class="text-4xl font-bold mb-6">
-Stay Connected
-</h2>
-
-<p class="mb-8">
-Receive updates on funding opportunities, innovation programs,
-events, workshops and startup support.
-</p>
-
-<div class="flex flex-col md:flex-row gap-4">
-<input
-type="email"
-placeholder="Email Address"
-class="flex-1 px-4 py-3 rounded text-gray-800"
-/>
-
-<button class="bg-white text-blue-900 px-8 py-3 rounded font-semibold">
-Subscribe
-</button>
-</div>
-
-</div>
-</section>
-
-<!-- FOOTER -->
-
-<footer class="bg-gray-100 py-12">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="grid md:grid-cols-3 gap-10">
-
-<div>
-<h3 class="font-bold text-xl mb-4">
-JENAINNOVATION
-</h3>
-
-<p>
-Connecting research, innovation, entrepreneurship and industry in the Jena region.
-</p>
-</div>
-
-<div>
-<h3 class="font-bold mb-4">
-Partners
-</h3>
-
-<ul class="space-y-2">
-<li>Friedrich Schiller University Jena</li>
-<li>University Hospital Jena</li>
-<li>Ernst Abbe University</li>
-<li>Carl Zeiss Foundation</li>
-</ul>
-</div>
-
-<div>
-<h3 class="font-bold mb-4">
-Contact
-</h3>
-
-<p>
-Am Planetarium 8<br>
-07743 Jena
-</p>
-</div>
-
-</div>
-
-</div>
-
+<footer class="bg-blue-900 text-white py-12 text-center">
+<h3 class="text-2xl font-bold mb-3">JENAINNOVATION</h3>
+<p>Connecting research, innovation, entrepreneurship and industry in the Jena region.</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-
-const slides = document.querySelectorAll('.hero-slide');
-
-let current = 0;
-
-setInterval(() => {
-
-slides[current].classList.remove('active');
-
-current++;
-
-if(current >= slides.length){
-current = 0;
-}
-
-slides[current].classList.add('active');
-
-}, 5000);
-
+new Swiper('.heroSwiper',{
+loop:true,
+autoplay:{delay:5000},
+pagination:{el:'.swiper-pagination',clickable:true},
+navigation:{nextEl:'.swiper-button-next',prevEl:'.swiper-button-prev'}
+});
 </script>
 
 </body>
